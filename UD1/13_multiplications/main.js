@@ -1,8 +1,24 @@
 function printMultiplicationTables() {
+ 
+    let header = '\t';
+    for (let w = 1; w < 10; w++) {
+        header += `${w}\t`;
+    }
+    console.log(header);
+    console.log('--------------------------------------------------------------------------');
 
+    for (let i = 1; i < 10; i++) {
+        let row = `${i} |`; 
+        for (let j = 1; j < 10; j++) {
+            row += `${i * j}\t`;
+        }
+        console.log(row);
+    }
 }
 
-printMultiplicationTables()
+printMultiplicationTables();
+
+
 // expected output
 //     1   2   3   ...
 // 1   1   2   3   ...

@@ -1,15 +1,13 @@
 function pingPong() {
-    let result=[];
-    for (let i = 1; i <= 100; i++) {
-        if ([i] % 10 === 0) {
-            result.push(`${[i]} PING`);
-        } else if ([i] % 5 === 0) {
-            result.push(`${[i]} PONG`);
+    for (let i = 1; i <= 10; i++) {
+        if (i % 10 === 0) {
+            console.log(`${[i]} PING`);
+        } else if (i % 5 === 0) {
+            console.log(`${[i]} PONG`);
         } else {
-            result.push([i]);
+            console.log(i);
         }
     }
-console.log(result) 
 }
 pingPong()
 // expected output
